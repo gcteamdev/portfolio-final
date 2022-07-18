@@ -145,12 +145,17 @@
     </a>
 
     
+    <h2 class="text-info connect" id="email">Love to connect
+ 
+      <h6 class="text-primary" id="email"> Email . LinkedIn </h6>
+      <input type="text"id="email-copy" class="text-dark" value="contact@gcteam.dev"readonly/>
+      <button class="rounded btn-outline-info"  onclick="myFunction()">copy e-mail</button>
+     
+      <br>
+      <br>
+      <a href="https://www.linkedin.com/in/devhamza/" type="button" class="btn text-info btn-lg  bg-light btn-md-lg p-md-3 mb-md-5 btn-outline-info mt-lg-5 ">LinkedIn</a>
+  </h2>
 
-    <h2 id="email">Love to connect
-
-        <h6 class="text-warning" id="email"> Email: contact@gcteam.dev</h6>
-        
-    </h2>
     
 </main>
 
@@ -881,6 +886,29 @@ if(inIframe()) document.querySelector('.no-iframe').style.display = 'block';
 
 
 
+</script>
+
+
+
+</script>
+ 
+ 
+<!-- script for copy text to clipboard-->v
+<script>
+   function myFunction() {
+  /* Get the text field */
+  var copyText = document.getElementById("email-copy");
+ 
+  /* Select the text field */
+  copyText.select();
+  copyText.setSelectionRange(0, 99999); /* For mobile devices */
+ 
+  /* Copy the text inside the text field */
+  navigator.clipboard.writeText(copyText.value);
+ 
+  /* Alert the copied text */
+  alert("Copied the text: " + copyText.value);
+}
 </script>
 
 
