@@ -12,7 +12,7 @@
   </head>
   <body>
     <nav class="navbar navbar1 navbar-expand-lg navbar-light bg-dark">
-        <a class="navbar-brand text-white" href="#">Hamza</a>
+        <img src="assests/Facebook Post 940x788 px.jpeg" class="navbar-brand my-pic"/>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -87,7 +87,7 @@
         <a href="https://www.linkedin.com/in/devhamza/" type="button" class="btn text-info btn-lg  bg-light btn-md-lg p-md-3 mb-md-5 btn-outline-light mt-lg-5 ">LinkedIn</a>
       
     </div>
-    <a class="pic-credit d-none d-lg-block text-secondary mr-2" href="https://unsplash.com/@timothyeberly"> Photo:Timothy Eberly</a>
+    <a class="pic-credit d-none d-md-block text-secondary mr-2" href="https://unsplash.com/@timothyeberly"> Photo:Timothy Eberly</a>
 
     <a class="link arrow-down d-none d-md-block" href="#">
         <span class="link__arrow">
@@ -132,8 +132,8 @@
     <button class="bg-dark text-white rounded-left display-4 d-none d-lg-block ">About me += bit more</button>
     <button class="bg-dark text-white rounded-left display-5 d-lg-none d-sm-block col-5 ">About me += bit more</button>
    
-    <img src="assests/Facebook Post 940x788 px.jpeg" class="about-me-pic mt-5 mb-5"/>
-    <h5>I am a front-end developer and a whale enthusiast based in Washington State. I love to create content that creates an impact, I enjoy working individually,as well as in a team.
+   
+    <h5 class="container-fluid">I am a front-end developer and a whale enthusiast based in Washington State. I love to create content that creates an impact, I enjoy working individually,as well as in a team.
         <br>
         <br>
         <br>
@@ -151,7 +151,6 @@
       <input type="text"id="email-copy" class="text-dark" value="contact@gcteam.dev"readonly/>
       <button class="rounded btn-outline-info"  onclick="myFunction()">copy e-mail</button>
      
-      <br>
       <br>
       <a href="https://www.linkedin.com/in/devhamza/" type="button" class="btn text-info btn-lg  bg-light btn-md-lg p-md-3 mb-md-5 btn-outline-info mt-lg-5 ">LinkedIn</a>
   </h2>
@@ -198,7 +197,10 @@
 
 }
 
-
+.pic-credit{
+  font-size: 10px;
+  color:white!important;
+}
 .parallax {
     position: relative;
 
@@ -240,19 +242,13 @@
 
 
 
-main img{
-    width:40%;
+.my-pic{
+    width:5%;
     border-radius: 45%;
     border-left:5px solid black;
     border-bottom:5px solid black;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px 5px;
 }
-
-
-
-
-
-
  
 html { box-sizing: border-box; } 
 *,*:before,*:after { box-sizing: inherit; }
@@ -483,11 +479,11 @@ p,a {
 
 
 <!--projects-->
-<section class="section-project-skills" id="section-project-skills"">
+<section class="section-project-skills bg-dark text-white" id="section-project-skills">
    <div class="container col-12 projects-div">
        <h2 class="text-center project-h2 display-4"> Projects: </h2>
    
-       <h6 class="text-declaration-underline text-center mb-5 sub-heading-projects"> These are some of my favorite projects:- </h6>
+       <h6 class="text-declaration-underline text-center text-white mb-5 sub-heading-projects"> These are some of my favorite projects:- </h6>
      
        <div class="list-projects d-lg-flex text-center justify-content-lg-between  container project-cards-outer">
    
@@ -595,12 +591,11 @@ p,a {
       background-color:rgba(209, 116, 116, 0.047)!important;
     }
     .sub-heading-projects{
-      color:#090808!important;
       margin-top:30px;
     }
 
     .card-text:hover{
-        color:black!important;
+        color:white!important;
         font-weight: bolder;
     }
     .project-h2{
@@ -615,9 +610,7 @@ p,a {
         background-color: #020b12!important;
     }
     .section-project-skills{
-        background-image: url("/assests/pexels-fwstudio-129731.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
+      
         height:100%;
     }
    
@@ -768,9 +761,9 @@ p,a {
 
 <section>
 <!--footer starts here-->
-<footer class="navbar navbar-expand-lg navbar-light text-center container-fluid d-flex footer-first-div">
+<footer class="navbar navbar-expand-lg navbar-light text-center container-fluid d-flex footer-first-div bg-dark text-white">
     <div class="col">
-      <a class="navbar-brand footer-logo text-white" href="#">Hamza</a>
+      <img src="assests/Facebook Post 940x788 px.jpeg" class="navbar-brand my-pic my-pic-footer"/>
      
        <div class=" text-center footer-links col-md-4">
            <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
@@ -785,7 +778,7 @@ p,a {
        </div>
     </div> 
 
-    <p class="text-dark m-ali">“I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion'.”
+    <p class="text-white m-ali">“I hated every minute of training, but I said, 'Don't quit. Suffer now and live the rest of your life as a champion'.”
       <br>
         ― Muhammad Ali</p>
 
@@ -808,7 +801,6 @@ p,a {
         position:relative
     }
     footer{
-        background:rgb(194, 148, 11)!important;
         height:600px;
         position:absolute;
         top:200px;
@@ -827,7 +819,7 @@ p,a {
     }
 
     div a{
-        color:black;
+        color:white;
     }
     .under-footer{
       color:#c0c0c0!important;
@@ -842,6 +834,9 @@ p,a {
       position: absolute;
       top:130%;
       
+    }
+    .my-pic-footer{
+      width:50%;
     }
 </style>
 
