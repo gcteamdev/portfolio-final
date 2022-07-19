@@ -128,12 +128,12 @@
             </div>   
         </header>
             
-   <main class="p-5" id="about">
-    <button class="bg-dark text-white rounded-left display-4 d-none d-lg-block ">About me += bit more</button>
-    <button class="bg-dark text-white rounded-left display-5 d-lg-none d-sm-block col-5 ">About me += bit more</button>
+   <main class="p-5 bg-dark" id="about">
+    <button class="text-white rounded-left display-4 d-none d-lg-block me-bitmore">About me += bit more</button>
+    <button class="text-white rounded-left display-5 d-lg-none d-sm-block col-5 me-bitmore ">About me += bit more</button>
    
    
-    <h5 class="container-fluid">I am a front-end developer and a whale enthusiast based in Washington State. I love to create content that creates an impact, I enjoy working individually,as well as in a team.
+    <h5 class="container-fluid text-info">I am a front-end developer and a whale enthusiast based in Washington State. I love to create content that creates an impact, I enjoy working individually,as well as in a team.
         <br>
         <br>
         <br>
@@ -201,6 +201,7 @@
   font-size: 10px;
   color:white!important;
 }
+
 .parallax {
     position: relative;
 
@@ -474,16 +475,81 @@ p,a {
 </style>
 
 
+<style>
+   .project-section{
+  display: flex;
+  background: rgb(248, 246, 246);
+  min-height: 35vh;
+  align-items: center;
+  justify-content: center;
+}
 
+.content-project {
+  position: relative;
+}
 
+.content-project h3 {
+  color: #fff;
+  font-size: 6em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
 
+.content-project h3:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px  #3c4e57;
+}
+
+.content-project h3:nth-child(2) {
+  color: #3c4e57;
+  animation: animate 4s ease-in-out infinite;
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+
+  50% {
+    clip-path: polygon(
+      0% 60%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 46%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+</style>
 
 <!--projects-->
 <section class="section-project-skills bg-dark text-white" id="section-project-skills">
+  
+      <div class="container-fluid project-section">
+        <div class="content-project">
+          <h3>projects</h3>
+          <h3>projects</h3>
+        </div>
+      </div>
+
+
    <div class="container col-12 projects-div">
-       <h2 class="text-center project-h2 display-4"> Projects: </h2>
-   
-       <h6 class="text-declaration-underline text-center text-white mb-5 sub-heading-projects"> These are some of my favorite projects:- </h6>
+  
      
        <div class="list-projects d-lg-flex text-center justify-content-lg-between  container project-cards-outer">
    
@@ -495,7 +561,7 @@ p,a {
                  
                  <p class="card-text text-info">A secured project planner App! <br>This application makes use of functions, Loops, Conditional Rendering and involved passing multiple properties to different components.<br>
                    <br> Used Node.Js and MongoDB as a Back-end tools and front end was JS, Bootstrap,HTML5,CSS for responsive desgins.<br></p>
-                 <a class="btn btn-success btn-lg" href="https://agile-e.herokuapp.com/" role="button">Launch</a>
+                 <a class="btn btn-info btn-lg" href="https://agile-e.herokuapp.com/" role="button">Launch</a>
                  <a class="btn border-white bg-muted text-success btn-lg ml-2" href="https://github.com/gcteamdev/Agile-e" role="button">Source code</a>
                </div>
              </div>
@@ -512,7 +578,7 @@ p,a {
                    <br>
                    <br>
                    <br>Created with Java script, Bootstrap, HTML5, and CSS to create a responsive and contemporary design. <br></p>
-                 <a class="btn btn-success btn-lg" href="https://gcteamdev.github.io/Inventory-Estimator-Bot/" role="button">Launch</a>
+                 <a class="btn btn-info btn-lg" href="https://gcteamdev.github.io/Inventory-Estimator-Bot/" role="button">Launch</a>
                  <a class="btn border-white bg-muted text-success btn-lg ml-2" href="https://github.com/gcteamdev/Inventory-Estimator-Bot" role="button">Source code</a>
                </div>
              </div>
@@ -530,7 +596,7 @@ p,a {
                    
                    <br>
                    <br>
-                 <a class="btn btn-success btn-lg" href="https://gcteamdev.github.io/BugTracker/" role="button">Launch</a>
+                 <a class="btn btn-info btn-lg" href="https://gcteamdev.github.io/BugTracker/" role="button">Launch</a>
                  <a class="btn border-white bg-muted text-success btn-lg ml-2" href="https://github.com/gcteamdev/BugTracker" role="button">Source code</a>
                </div>
              </div>
@@ -542,9 +608,19 @@ p,a {
    
     <!--end of all projects section-->    
    </div>
+
+
+   
+<div class="project-section">
+  <div class="content-project">
+    <h3>Skills</h3>
+    <h3>Skills</h3>
+  </div>
+</div>
+
+
    
    <div class="container skills-outerdiv">
-       <h2 class="container-fluid text-center skills mt-5 display-4"> Skills:</h2>
        <div class="d-sm-block d-md-flex flex-wrap  justify-content-between mb-5">
            <ui>
                <li>Leadership</li>
@@ -576,7 +652,17 @@ p,a {
 
 
 <style>
-    
+  #section-project-skills{
+    border-radius:10px;
+    margin: 5px;
+  }
+    .me-bitmore{
+  background: black!important;
+  margin-bottom: 50px;
+    }
+   .skills-outerdiv ui{
+    margin-top: 100px;
+   }
     .project-cards-outer a:hover {
         background-color: rgba(154, 18, 18, 0.189);
     }
@@ -656,6 +742,7 @@ p,a {
  }  
  div li{
     font-weight: bolder;
+    color:teal;
  }
 </style>
 
@@ -705,6 +792,7 @@ p,a {
   box-shadow:0 10px 40px rgba(0,0,0,.5);
   overflow:hidden;
   box-shadow: rgb(38, 57, 77) 0px 20px 30px 5px;
+  border-radius: 40px 5px 20px;
 }
 .testimonial .card .layer{
   position:absolute;
@@ -712,7 +800,7 @@ p,a {
   left:0;
   height:100%;
   width:100%;
-  background:linear-gradient(#151515, #00fff75a);
+  background:linear-gradient(#151515, #4449495a);
   z-index:1;
   transition:0.5s;
 }
@@ -814,7 +902,7 @@ p,a {
         padding:20px;
     }
     .fa-UPwork{
-        background-color:rgb(8, 65, 211);
+        background-color: teal;
         border-radius: 50%;
     }
 
@@ -827,7 +915,7 @@ p,a {
       
     }
     strong{
-      color:rgb(39, 14, 167);
+      color:teal;
     }
     .div-under-footer{
       background:black;
